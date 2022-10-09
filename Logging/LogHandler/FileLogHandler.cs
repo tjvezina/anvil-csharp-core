@@ -105,7 +105,7 @@ namespace Anvil.CSharp.Logging
         /// the next time the log file is rotated, the oldest file will be deleted. If the limit is 0, no rotated files are kept,
         /// i.e. when the log file is rotated, it is simply erased and started over.
         /// </summary>
-        public FileLogHandler(
+        // public FileLogHandler(
             string path,
             WriteMode writeMode = WriteMode.Append,
             long? rotateFileSizeLimit = 10L * 1024 * 1024,
