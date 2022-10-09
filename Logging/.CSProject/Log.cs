@@ -150,7 +150,7 @@ namespace Anvil.CSharp.Logging
         /// <returns>The configured <see cref="Logger"/> instance</returns>
         public static Logger GetLogger(in object instance, string messagePrefix = null) => new Logger(in instance, messagePrefix);
 
-        internal static void DispatchLog(
+        // internal static void DispatchLog(
             LogLevel level,
             string message,
             string callerDerivedTypeName,
